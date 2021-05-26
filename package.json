@@ -5,13 +5,16 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "build": "babel src/assets/js -w -d dist/assets/js"
+    "build": "webpack -w"
   },
   "author": "Jihyun",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2"
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   }
 }
