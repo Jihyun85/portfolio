@@ -1,4 +1,5 @@
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   // entry file
@@ -6,8 +7,12 @@ module.exports = {
   // 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
   output: {
     path: path.resolve(__dirname, "dist/assets/js"),
-    filename: "bundle.js",
+    filename: "main.js",
   },
+  plugins: [
+    // 컴파일 + 번들링 CSS 파일이 저장될 경로와 이름 지정
+    new MiniCssExtractPlugin({ filename: "../css/style.css" }),
+  ],
   module: {
     rules: [
       {
@@ -20,6 +25,15 @@ module.exports = {
             presets: ["@babel/preset-env"],
           },
         },
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader", // compiles Sass to CSS, using Node Sass by default
+        ],
+        exclude: /node_modules/,
       },
     ],
   },
