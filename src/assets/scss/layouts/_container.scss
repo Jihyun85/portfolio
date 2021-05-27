@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  padding: 0 $sm-padding;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    padding: 0 $md-padding;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    max-width: 114rem;
+    padding: 0;
+  }
+}
