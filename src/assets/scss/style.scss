@@ -1,3 +1,10 @@
+// base
 @import "./base/normalize";
 @import "./base/reset";
 @import "./base/fonts";
+
+// constants
+@import "./constants/padding";
+@import "./constants/color";
+@import "./constants/breakpoint";
+@import "./constants/typography";
