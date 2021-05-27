@@ -9,5 +9,8 @@
 @import "./constants/breakpoint";
 @import "./constants/typography";
 
+// mixins
+@import "./mixins/responsive";
+
 // layouts
 @import "./layouts/container";
