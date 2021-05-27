@@ -6,12 +6,12 @@ module.exports = {
   entry: "./src/assets/js/main.js",
   // 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
   output: {
-    path: path.resolve(__dirname, "dist/assets/js"),
+    path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
   plugins: [
     // 컴파일 + 번들링 CSS 파일이 저장될 경로와 이름 지정
-    new MiniCssExtractPlugin({ filename: "../css/style.css" }),
+    new MiniCssExtractPlugin({ filename: "style.css" }),
   ],
   module: {
     rules: [
@@ -35,9 +35,19 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
+      {
+        test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "assets/fonts/[contenthash].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   devtool: "source-map",
-  // https://webpack.js.org/concepts/mode/#mode-development
   mode: "development",
 };
