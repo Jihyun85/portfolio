@@ -1,4 +1,4 @@
-.container {
+@mixin container() {
   width: 100%;
   padding: 0 $sm-padding;
   margin: 0 auto;
@@ -9,7 +9,7 @@
   }
 
   @media screen and (min-width: $lg-breakpoint) {
-    max-width: 114rem;
+    max-width: 1140px;
     padding: 0;
   }
 }
