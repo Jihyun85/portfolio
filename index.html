@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="gnb">
+        <div class="gnb-left">
+          <button class="sm-only" type="button">
+            <i class="fas fa-bars" aria-label="메뉴 열기 버튼"></i>
+          </button>
+          <a href="/">
+            <img
+              class="sm-hidden logo"
+              src="./src/assets/images/Logo.svg"
+              alt="로고"
+            />
+          </a>
+          <nav class="sm-hidden">
+            <ul class="gnb-list">
+              <li class="gnb-item"><button type="button">소개</button></li>
+              <li class="gnb-item"><button type="button">기술역량</button></li>
+              <li class="gnb-item">
+                <button type="button">포트폴리오</button>
+              </li>
+              <li class="gnb-item"><button type="button">연락처</button></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="gnb-center">
+          <a href="/">
+            <img
+              class="sm-only"
+              src="./src/assets/images/Logo.svg"
+              alt="로고"
+            />
+          </a>
+        </div>
+
+        <div class="gnb-right">
+          <a href="/" class="gnb-resume">
+            <i class="far fa-file" aria-label="이력서 보러가기"></i>
+            <p class="sm-hidden">이력서 보러가기</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <script src="dist/main.js"></script>
+  </body>
+</html>
