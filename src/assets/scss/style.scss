@@ -16,3 +16,9 @@
 @import "./mixins/position";
 @import "./mixins/text-style";
 @import "./mixins/container";
+
+// layouts
+@import "./layouts/header";
+
+// components
+@import "./components/gnb";
