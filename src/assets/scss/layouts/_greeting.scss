@@ -1,0 +1,36 @@
+.greeting {
+  @include flexbox(start, center);
+  height: 150px;
+  background-color: $pink;
+  font-weight: bolder;
+
+  &-text {
+    @include text-style(20, $black);
+    padding: 0 $sm-padding;
+
+    p:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include responsive(T) {
+    height: 200px;
+
+    &-text {
+      @include text-style(24);
+      padding: 0 $md-padding;
+    }
+  }
+
+  @include responsive(D) {
+    height: 250px;
+
+    &-text {
+      @include text-style(34);
+      @include inline-flexbox(center, center);
+      flex-direction: column;
+      width: 1140px;
+      margin: 0 auto;
+    }
+  }
+}
