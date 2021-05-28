@@ -1,25 +1,7 @@
 @font-face {
-  font-family: "Elice DigitalBaeum";
-  src: url("/src/assets/fonts/EliceDigitalBaeum.eot");
-  src: url("/src/assets/fonts/EliceDigitalBaeum.eot?#iefix")
-      format("embedded-opentype"),
-    url("/src/assets/fonts/EliceDigitalBaeum.woff2") format("woff2"),
-    url("/src/assets/fonts/EliceDigitalBaeum.woff") format("woff"),
-    url("/src/assets/fonts/EliceDigitalBaeum.ttf") format("truetype");
+  font-family: "NEXON Lv2 Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Elice DigitalBaeum";
-  src: url("/src/assets/fonts/EliceDigitalBaeum-Bd.eot");
-  src: url("/src/assets/fonts/EliceDigitalBaeum-Bd.eot?#iefix")
-      format("embedded-opentype"),
-    url("/src/assets/fonts/EliceDigitalBaeum-Bd.woff2") format("woff2"),
-    url("/src/assets/fonts/EliceDigitalBaeum-Bd.woff") format("woff"),
-    url("/src/assets/fonts/EliceDigitalBaeum-Bd.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
 }
