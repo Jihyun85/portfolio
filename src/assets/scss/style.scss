@@ -22,3 +22,14 @@
 
 // components
 @import "./components/gnb";
+
+body {
+  $sm-header-height: 50px;
+  $md-header-height: 80px;
+
+  margin-top: $sm-header-height;
+
+  @include responsive(T) {
+    margin-top: $md-header-height;
+  }
+}
