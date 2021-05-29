@@ -1,0 +1,7 @@
+@mixin base-margin-bottom() {
+  margin-bottom: 20px;
+
+  @include responsive(T) {
+    margin-bottom: 40px;
+  }
+}
