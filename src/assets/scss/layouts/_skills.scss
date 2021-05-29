@@ -1,0 +1,85 @@
+.skills {
+  @include container;
+  @include flexbox-column;
+  @include base-margin-bottom;
+
+  margin-top: 40px;
+
+  &-content {
+    @include flexbox-column;
+    width: 80%;
+    background-color: $dark-gray;
+  }
+
+  &-left,
+  &-right {
+    @include flexbox-column(start, center);
+    width: 100%;
+    padding: 20px 40px;
+    min-width: 260px;
+
+    h4 {
+      @include text-style(14, $black);
+      margin-bottom: 20px;
+      padding: 0 5px;
+      border-bottom: 2px solid $black;
+      font-weight: bold;
+    }
+
+    &-list {
+      width: 100%;
+    }
+
+    &-item {
+      @include text-style(12);
+      width: 100%;
+      padding: 5px 0;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    }
+  }
+
+  &-left {
+    background-color: $ivory;
+
+    &-item {
+      &:hover {
+        color: $ivory;
+        background-color: $dark-gray;
+      }
+    }
+  }
+
+  &-right {
+    color: $ivory;
+    background-color: $dark-gray;
+
+    &-item {
+      &:hover {
+        color: $black;
+        background-color: $ivory;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    margin-top: 60px;
+
+    h4 {
+      @include text-style(20);
+    }
+
+    &-content {
+      flex-direction: row;
+      align-items: start;
+    }
+
+    &-left,
+    &-right {
+      &-item {
+        @include text-style(16);
+      }
+    }
+  }
+}
