@@ -3,6 +3,7 @@
 @import "./constants/color";
 @import "./constants/breakpoint";
 @import "./constants/typography";
+@import "./constants/z-index";
 
 // base
 @import "./base/normalize";
@@ -23,6 +24,7 @@
 @import "./layouts/greeting";
 @import "./layouts/about";
 @import "./layouts/skills";
+@import "./layouts/work";
 
 // components
 @import "./components/gnb";
