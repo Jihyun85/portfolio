@@ -1,0 +1,101 @@
+.work {
+  @include flexbox-column(start);
+
+  margin-top: 40px;
+  padding: 20px;
+
+  &-card {
+    padding: 20px 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(odd) {
+      background-color: #f2e6e3;
+    }
+
+    &:nth-child(even) {
+      background-color: #e0dfe2;
+    }
+  }
+
+  &-left,
+  &-right {
+    padding: 0 20px;
+  }
+
+  &-left {
+    @include flexbox-column;
+  }
+
+  &-imgbox {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-icons {
+    @include flexbox;
+    gap: 10px;
+    align-self: flex-end;
+    margin-top: 5px;
+    font-size: 20px;
+
+    .icon-notion {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      object-fit: cover;
+      margin-top: -3px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-sublist {
+    @include flexbox(center);
+    flex-wrap: wrap;
+  }
+
+  &-subitem {
+    padding: 5px 0;
+    text-transform: uppercase;
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin: 0 3px;
+    }
+  }
+
+  &-btn {
+    @include pos-center-x(absolute);
+    margin-top: 20px;
+  }
+
+  @include responsive(T) {
+    &-card {
+      @include flexbox;
+    }
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+
+    &-sublist {
+      justify-content: flex-start;
+    }
+
+    &-btn {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
