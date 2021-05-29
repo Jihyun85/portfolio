@@ -12,34 +12,6 @@
     @include base-margin-bottom;
   }
 
-  &-item {
-    a:hover {
-      text-decoration: underline;
-      color: #b67768;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-
-    dt,
-    dd {
-      @include text-style(14, $black);
-      text-align: center;
-    }
-
-    dt {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    &.item-phrase dd {
-      width: 100%;
-      max-width: 450px;
-      text-align: left;
-    }
-  }
-
   &-btn {
     @include pos-center-x;
     margin-top: 20px;
@@ -51,33 +23,6 @@
     &-content {
       flex-direction: row;
       gap: 100px;
-    }
-
-    &-item {
-      dt,
-      dd {
-        @include text-style(16, $black);
-      }
-
-      dt {
-        margin-right: 10px;
-        margin-bottom: 0;
-      }
-
-      &:not(:last-child) {
-        @include flexbox(start, start);
-      }
-
-      &:last-child {
-        dt {
-          text-align: left;
-          margin-bottom: 5px;
-        }
-
-        dd {
-          max-width: 500px;
-        }
-      }
     }
 
     &-btn {
