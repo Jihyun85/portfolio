@@ -31,7 +31,10 @@
 @import "./components/subtitle";
 @import "./components/profile";
 @import "./components/divider";
-@import "./components/btn";
+@import "./components/description";
+
+// extends
+@import "./extends/btn";
 
 body {
   $sm-header-height: 50px;
