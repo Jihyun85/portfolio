@@ -78,6 +78,15 @@
     &-left,
     &-right {
       &-item {
+        @include text-style(14);
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-left,
+    &-right {
+      &-item {
         @include text-style(16);
       }
     }
