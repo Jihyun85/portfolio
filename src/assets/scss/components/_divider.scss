@@ -1,0 +1,11 @@
+.divider {
+  @include base-margin-bottom();
+  width: 100px;
+  height: 2px;
+  background-color: $light-gray;
+
+  @include responsive(T) {
+    width: 200px;
+    height: 3px;
+  }
+}

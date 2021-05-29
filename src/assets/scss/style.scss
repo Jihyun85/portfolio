@@ -23,6 +23,10 @@
 
 // components
 @import "./components/gnb";
+@import "./components/subtitle";
+@import "./components/profile";
+@import "./components/divider";
+@import "./components/btn";
 
 body {
   $sm-header-height: 50px;

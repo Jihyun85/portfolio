@@ -1,0 +1,14 @@
+.subtitle {
+  @include text-style(16, $dark-gray);
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  @include responsive(T) {
+    @include text-style(20);
+    margin-bottom: 10px;
+  }
+
+  @include responsive(D) {
+    @include text-style(24);
+  }
+}
