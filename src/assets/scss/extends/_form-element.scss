@@ -1,0 +1,41 @@
+%form-element {
+  @include text-style(12, $black);
+  border: 2px solid $pink;
+  padding: 5px;
+
+  &:focus {
+    background-color: $pink;
+  }
+
+  @include responsive(D) {
+    @include text-style(14);
+    padding: 5px 10px;
+  }
+}
+
+.form-text {
+  @extend %form-element;
+}
+
+.form-textarea {
+  @extend %form-element;
+  height: 100px;
+  resize: none;
+
+  @include responsive(D) {
+    height: 150px;
+  }
+}
+
+.form-label {
+  @include text-style(14, $black);
+  flex-shrink: 0;
+  width: 40px;
+  font-weight: bold;
+  margin-right: 10px;
+
+  @include responsive(D) {
+    @include text-style(16);
+    width: 60px;
+  }
+}

@@ -19,13 +19,6 @@
 @import "./mixins/container";
 @import "./mixins/base-margin-bottom";
 
-// layouts
-@import "./layouts/header";
-@import "./layouts/greeting";
-@import "./layouts/about";
-@import "./layouts/skills";
-@import "./layouts/work";
-
 // components
 @import "./components/gnb";
 @import "./components/subtitle";
@@ -33,8 +26,16 @@
 @import "./components/divider";
 @import "./components/description";
 
+// layouts
+@import "./layouts/header";
+@import "./layouts/greeting";
+@import "./layouts/about";
+@import "./layouts/skills";
+@import "./layouts/work";
+
 // extends
 @import "./extends/btn";
+@import "./extends/form-element";
 
 body {
   $sm-header-height: 50px;
