@@ -1,4 +1,5 @@
 .work {
+  @include container;
   @include flexbox-column(start);
 
   margin-top: 40px;
