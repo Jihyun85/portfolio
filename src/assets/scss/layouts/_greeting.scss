@@ -2,11 +2,14 @@
   @include flexbox(start, center);
   height: 150px;
   background-color: $pink;
-  font-weight: bolder;
 
   &-text {
     @include text-style(20, $black);
     padding: 0 $sm-padding;
+
+    p {
+      font-weight: bold;
+    }
 
     p:first-child {
       margin-bottom: 10px;

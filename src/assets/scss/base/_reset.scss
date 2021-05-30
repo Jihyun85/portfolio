@@ -48,3 +48,17 @@ ol {
 address {
   font-style: normal;
 }
+
+/**
+* Firefox specific rule
+*/
+
+@-moz-document url-prefix() {
+  * {
+    font-weight: 400 !important;
+  }
+
+  dt {
+    text-decoration: underline;
+  }
+}
