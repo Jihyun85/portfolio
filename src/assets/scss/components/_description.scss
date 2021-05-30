@@ -6,7 +6,7 @@
   &-item {
     a:hover {
       text-decoration: underline;
-      color: #b67768;
+      color: $brown;
     }
 
     &:not(:last-child) {
