@@ -1,0 +1,104 @@
+.contact {
+  @include container;
+  @include flexbox-column;
+  @include base-margin-bottom;
+
+  margin-top: 20px;
+
+  &-content {
+    @include flexbox-column;
+    width: 100%;
+  }
+
+  &-mine {
+    margin-bottom: 20px;
+  }
+
+  &-info {
+    @include text-style(14, $black);
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &-company {
+    width: 100%;
+
+    &-title {
+      @include text-style(16, $black);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-form {
+    @include flexbox-column;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &-item {
+      @include flexbox(between);
+      width: 100%;
+      margin-bottom: 10px;
+
+      input,
+      textarea {
+        flex-grow: 1;
+      }
+    }
+
+    &-textarea {
+      align-items: flex-start;
+
+      label {
+        margin-top: 3px;
+      }
+    }
+
+    @include responsive(T) {
+      width: 100%;
+      max-width: initial;
+    }
+  }
+
+  &-btn {
+    align-self: flex-end;
+  }
+
+  @include responsive(T) {
+    margin-top: 40px;
+
+    &-content {
+      flex-direction: row;
+    }
+
+    &-info {
+      margin-bottom: 30px;
+    }
+
+    &-mine,
+    &-company {
+      @include flexbox;
+      width: 100%;
+    }
+
+    &-mine {
+      flex-direction: column;
+      align-self: flex-start;
+      padding: 20px 0;
+    }
+
+    &-company {
+      padding: 0 20px;
+    }
+  }
+
+  @include responsive(D) {
+    margin-top: 60px;
+
+    &-info {
+      @include text-style(16);
+      max-width: 400px;
+    }
+  }
+}
