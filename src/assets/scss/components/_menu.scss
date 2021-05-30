@@ -1,0 +1,34 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid $light-gray;
+  z-index: $z-index-menu;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 300ms ease-in-out;
+
+  &-list {
+    background-color: $white;
+  }
+
+  &-item {
+    @include text-style(14, $black);
+    width: 100%;
+    text-align: center;
+    transition: background-color 300ms ease-in-out;
+
+    a,
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
+}
