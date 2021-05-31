@@ -33,12 +33,18 @@
           </h1>
           <nav class="sm-hidden">
             <ul class="gnb-list">
-              <li class="gnb-item"><button type="button">소개</button></li>
-              <li class="gnb-item"><button type="button">기술역량</button></li>
               <li class="gnb-item">
-                <button type="button">포트폴리오</button>
+                <button class="js-about-btn" type="button">소개</button>
               </li>
-              <li class="gnb-item"><button type="button">연락처</button></li>
+              <li class="gnb-item">
+                <button class="js-skills-btn" type="button">기술역량</button>
+              </li>
+              <li class="gnb-item">
+                <button class="js-work-btn" type="button">포트폴리오</button>
+              </li>
+              <li class="gnb-item">
+                <button class="js-contact-btn" type="button">연락처</button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -67,19 +73,20 @@
     <aside id="menu" class="menu sm-only">
       <ul class="menu-list">
         <li class="menu-item">
-          <button type="button">소개</button>
+          <button class="js-about-btn" type="button">소개</button>
         </li>
         <li class="menu-item">
-          <button type="button">기술역량</button>
+          <button class="js-skills-btn" type="button">기술역량</button>
         </li>
         <li class="menu-item">
-          <button type="button">포트폴리오</button>
+          <button class="js-work-btn" type="button">포트폴리오</button>
         </li>
         <li class="menu-item">
-          <button type="button">연락처</button>
+          <button class="js-contact-btn" type="button">연락처</button>
         </li>
       </ul>
     </aside>
+
     <main>
       <section class="greeting" aria-label="인사말">
         <h2 class="visually-hidden">인사말</h2>
@@ -90,7 +97,7 @@
       </section>
 
       <section class="me">
-        <article class="about">
+        <article id="aboutBox" class="about">
           <h2 class="subtitle">소개</h2>
           <div class="divider"></div>
 
@@ -134,7 +141,7 @@
           </div>
         </article>
 
-        <aritcle class="skills">
+        <aritcle id="skillsBox" class="skills">
           <h2 class="subtitle">기술역량</h2>
           <div class="divider"></div>
 
@@ -162,7 +169,7 @@
         </aritcle>
       </section>
 
-      <section class="work">
+      <section id="workBox" class="work">
         <h2 class="subtitle">포트폴리오</h2>
         <div class="divider"></div>
 
@@ -285,8 +292,9 @@
         </article>
       </section>
     </main>
+
     <footer>
-      <section class="contact">
+      <section id="contactBox" class="contact">
         <h2 class="subtitle">연락처</h2>
         <div class="divider"></div>
         <div class="contact-content">
