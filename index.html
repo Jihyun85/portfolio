@@ -332,15 +332,21 @@
               </div>
             </dl>
           </article>
+
           <article class="contact-company">
             <h3 class="contact-company-title sm-only">제안 보내기</h3>
-            <form class="contact-form">
+            <form
+              class="contact-form"
+              method="POST"
+              action="https://formspree.io/f/xbjqokvy"
+            >
               <div class="contact-form-item">
                 <label class="form-label" for="form-company">회사명</label>
                 <input
                   id="form-company"
                   class="form-text"
                   type="text"
+                  name="법인명 혹은 서비스명"
                   placeholder="법인명이나 서비스명을 입력해주세요."
                 />
               </div>
@@ -350,7 +356,8 @@
                   id="form-contact"
                   class="form-text"
                   type="text"
-                  placeholder="이메일이나 번호를 입력해주세요."
+                  name="연락 가능한 이메일"
+                  placeholder="연락 가능한 이메일을 입력해주세요."
                 />
               </div>
               <div class="contact-form-item">
@@ -359,6 +366,7 @@
                   id="form-url"
                   class="form-text"
                   type="text"
+                  name="회사 홈페이지 URL 혹은 공고의 URL"
                   placeholder="(선택) 회사 홈페이지 URL이나 공고의 URL을 입력해주세요."
                 />
               </div>
@@ -367,6 +375,7 @@
                 <textarea
                   id="form-message"
                   class="form-textarea"
+                  name="메시지"
                   placeholder="자세한 내용을 적어주시면 회신드리겠습니다."
                 ></textarea>
               </div>
