@@ -26,6 +26,7 @@
 
   &-resume {
     @include flexbox(end);
+
     p {
       @include text-style(16, $dark-gray);
       margin-left: 10px;
@@ -37,7 +38,7 @@
     height: 80px;
 
     h1 {
-      margin-right: 80px;
+      margin-right: 50px;
     }
 
     .logo {
@@ -56,10 +57,13 @@
     &-item {
       button {
         @include text-style(16, $black);
+        padding: 5px 20px;
         font-weight: bold;
+        transition: color 200ms ease-in-out;
       }
-      &:not(:last-child) {
-        margin-right: 30px;
+
+      &:hover button {
+        color: $brown;
       }
     }
   }
